@@ -5,6 +5,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -44,17 +47,22 @@ p {
     text-align: center;
 }
 
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
 footer {
-    margin-top: 40px;
-    position: relative;
+    margin-top: auto; /* Опускає footer вниз */
+    padding: 10px 0;
     text-align: center;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
 }
 
 .toggle-container {
-    margin-top: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -101,11 +109,4 @@ footer {
     margin-left: 10px;
     font-size: 14px;
     color: #00796B;
-}
-
-.result {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
 }
