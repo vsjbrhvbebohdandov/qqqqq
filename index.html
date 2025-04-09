@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПотужноНометр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ПотужноНометр</h1>
+    <p>Дізнайтеся рівень вашої потужності!</p>
+    <div class="scanner-container">
+        <div class="scanner" id="scanner">
+            <p class="scan-text" id="scan-text">Поставте палець...</p>
+        </div>
+    </div>
+    <div class="toggle-container">
+        <label for="power-toggle" class="toggle-label">Режим:</label>
+        <input type="checkbox" id="power-toggle">
+        <span id="toggle-description">Більше 50%</span>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
